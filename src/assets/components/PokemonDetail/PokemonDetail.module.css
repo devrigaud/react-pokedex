@@ -1,0 +1,155 @@
+.pokemonDetail {
+	color: #333;
+	background-color: #ffffff;
+	padding: 20px;
+	padding: 0;
+	border-radius: 5px;
+	.title {
+		margin: 10px 0 0;
+		font-size: 1.25rem;
+		text-align: left;
+		span {
+			color: #646cff;
+			font-size: 1.75rem;
+		}
+	}
+	img {
+		width: 100%;
+		aspect-ratio: 1/1;
+		object-fit: contain;
+		background-color: #f4f8ff;
+		margin: 0;
+		display: block;
+		padding: 20px;
+		box-sizing: border-box;
+		border-radius: 5px 5px 0 0;
+		height: 100%;
+	}
+	.split {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		gap: 0;
+		.side {
+			&:last-child {
+				padding: 20px;
+			}
+		}
+	}
+	.info {
+		padding: 0;
+		text-align: left;
+		display: flex;
+		gap: 10px;
+		font-size: 14px;
+		margin-bottom: 20px;
+		flex-wrap: wrap;
+		.infoRow {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			background-color: #f4f8ff;
+			border-radius: 5px;
+			padding: 10px;
+			ul {
+				margin: 0;
+				padding: 0 0 0 20px;
+				li {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.types {
+		display: flex;
+		gap: 10px;
+		margin: 5px 0 20px;
+		.type {
+			padding: 2px 8px 3px;
+			border-radius: 5px;
+			background-color: #f4f8ff;
+			font-weight: bold;
+			font-size: 12px;
+		}
+	}
+	.stats {
+		background-color: #f4f8ff;
+		text-align: left;
+		padding: 10px;
+		border-radius: 5px;
+		h4 {
+			margin: 0 0 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			span {
+				font-size: 12px;
+				color: #b9b9b9;
+			}
+		}
+		.statsWrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		.stat {
+			background-color: #d8e4f9;
+			border-radius: 50px;
+			position: relative;
+			.statusBar {
+				background-color: #646cff;
+				position: absolute;
+				height: 100%;
+				left: 0;
+				border-radius: 50px;
+			}
+			.statName {
+				position: relative;
+				padding: 5px 10px;
+				display: block;
+				color: #fff;
+				font-weight: bold;
+				font-size: 12px;
+				display: flex;
+				justify-content: space-between;
+				span {
+					display: block;
+					padding-right: 20px;
+					color: #3339b3;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.split {
+			flex-direction: row;
+			.side {
+				flex: 1;
+				.title {
+					font-size: 3rem;
+				}
+				img {
+					border-radius: 5px 0 0 5px;
+				}
+				&:last-child {
+					padding: 40px;
+				}
+			}
+		}
+		.info {
+			padding: 0;
+			gap: 20px;
+			.infoRow {
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
+		}
+		.stats {
+			padding: 20px;
+			border-radius: 5px;
+		}
+	}
+}

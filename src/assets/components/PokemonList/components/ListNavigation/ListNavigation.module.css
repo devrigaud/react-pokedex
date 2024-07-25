@@ -1,0 +1,15 @@
+.listNavigation {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	button {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.listNavigation {
+		justify-content: flex-end;
+	}
+}
